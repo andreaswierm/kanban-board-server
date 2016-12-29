@@ -5,6 +5,10 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Mongoid
 gem 'mongoid', '~> 6.0.0'
+# Redbooth omniauth
+gem "omniauth-redbooth"
+# Allow cors
+gem 'rack-cors'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
