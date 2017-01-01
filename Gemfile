@@ -7,6 +7,8 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'mongoid', '~> 6.0.0'
 # Redbooth omniauth
 gem "omniauth-redbooth"
+# Redbotth API
+gem "redbooth-ruby"
 # Allow cors
 gem 'rack-cors'
 # Use Puma as the app server
