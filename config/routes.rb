@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   delete '/session', to: 'sessions#destroy'
   get '/auth/:provider/callback', to: 'sessions#create'
 
-  resources :projects, only: [:index]
+  resources :organizations, only: [:index] do
+    resources :projects, only: [:index, :create, :update, :show]
+  end
 end
