@@ -1,24 +1,15 @@
-# README
+# Kanban board server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple server that talks to redbooth API to create tasks, project and to handle oauth
 
-Things you may want to cover:
+## Setup
+1. `git clone git@github.com:andreaswierm/kanban-board-server.git`
+2. `cd kanban-board-server`
+3. `bundle install`
 
-* Ruby version
+### Start the development server
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Start server
+  ```sh
+  rails server
+  ```
