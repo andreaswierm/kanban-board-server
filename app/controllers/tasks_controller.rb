@@ -26,6 +26,21 @@ class TasksController < ApplicationController
     render json: task
   end
 
+  def update
+    task = current_user
+      .client
+      .task(
+        :update,
+        organization_id: params[:organization_id],
+        project_id: params[:project_id],
+        id: params[:id],
+        task_list_id: task_params[:task_list_id],
+        name: task_params[:name]
+      )
+
+    render json: task
+  end
+
   private
 
     def task_params
